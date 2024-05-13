@@ -24,6 +24,6 @@ palindromes min max = maximum $ do
     guard $ isPalindrome s
     pure $ p
 
-answer4 :: Int -> Int
-answer4 n = 
+solution4 :: Int -> Int
+solution4 n = 
     fromMaybe 0  (palindromes n (n * 10 - 1))
